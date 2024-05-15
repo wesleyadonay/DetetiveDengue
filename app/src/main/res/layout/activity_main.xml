@@ -19,13 +19,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="373dp"
-        android:layout_height="81dp"
+        android:layout_width="395dp"
+        android:layout_height="95dp"
         android:layout_marginTop="8dp"
         android:text="O Detetive Dengue é uma ferramenta essencial utilizada pela população de Paudalho para identificar os focos de dengue e ajudar no combate as doenças causadas pelo Aedes aegypti. "
         android:textAlignment="center"
         android:textColor="#004AAC"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,15 +33,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="376dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="382dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="4dp"
         android:text="A Dengue, Zika, Chikungunya e Febre amarela são transmitidas pela picada da fêmea do Aedes Aegypti e precisamos combater o mosquito evitando sua proliferação em água parada. Com a sua ajuda, a Prefeitura de Paudalho mapeará os focos e providências serão tomadas. Basta tirar uma foto e enviar."
         android:textAlignment="center"
         android:textColor="#004AAC"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -50,11 +50,25 @@
         android:layout_width="379dp"
         android:layout_height="103dp"
         android:layout_marginTop="8dp"
-        android:text="Lembre-se de fazer sua parte para combater a doença em Betim. Em caso de febre alta, dor de cabeça, dor no corpo, náuseas e vômitos ou manchas vermelhas no corpo, procure a UBS mais próxima de sua casa."
+        android:text="Lembre-se de fazer sua parte para combater a doença em Betim. Em caso de febre alta, dor de cabeça, dor no corpo, náuseas e vômitos ou manchas vermelhas no corpo, procure o PSF mais próximo de sua casa."
         android:textAlignment="center"
         android:textColor="#004AAC"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/bt_Foco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#004AAC"
+        android:text="Denuncie o Foco de Dengue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
