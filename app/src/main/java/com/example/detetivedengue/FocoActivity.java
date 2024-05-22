@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +21,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class FocoActivity extends AppCompatActivity {
     ImageView iv_foto;
+    private Button enviar;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,16 @@ public class FocoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 tirarFoto();
+            }
+        });
+
+        enviar = findViewById(R.id.enviar);
+
+        enviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), EnviarActivity.class);
+                startActivity(intent);
             }
         });
     }
